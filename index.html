@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Birthday Menu</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #fff4f4;
+  margin: 0;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+#cake {
+  width: 220px;
+  border-radius: 15px;
+  margin: 20px auto;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+#menu-card {
+  display: none;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+</style>
+</head>
+
+<body>
+
+<h2>🎂 Tap the Cake to Reveal Menu 🎉</h2>
+
+<!-- Cake to tap -->
+<img src="cake.png" id="cake" onclick="showMenu()">
+
+<!-- Menu card image -->
+<img src="birthday_menu_card.png" id="menu-card">
+
+<script>
+function showMenu() {
+  document.getElementById("menu-card").style.display = "block";
+}
+</script>
+
+</body>
+</html>
